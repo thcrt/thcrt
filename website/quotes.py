@@ -1,7 +1,27 @@
+# yapf: disable
 quotes = [
     "style is the answer to everything.",
     "to do a dull thing with style is preferable to doing a dangerous thing without it.",
     "to do a dangerous thing with style is what i call art.",
     "four shalt thou not count, neither count thou two, excepting that thou then proceed to three. five is right out.",
     "you must construct additional pylons.",
+    "don't panic.",
+    "so long, and thanks for all the fish.",
+    "show life the flyest version of you.",
+    "let's dance again, shall we?",
+    "the sharif don't like it.",
+    "un-re-route the rivers.",
+    "pleased to meet you. hope you guessed my name.",
+    "and don'tcha come back no more.",
+    "egal wer kommt, egal wer geht, egal, das kommt nicht darauf an.",
+    "we're just catching and releasing what builds up throughout the day.",
+    "nobody expects the spanish inquisition!",
+    "in the beginning the universe was created. this has made a lot of people very angry and been widely regarded as a bad move.",
+    "on the internet, nobody knows you're a dog.",
+    "give me ASCII or give me deaþ!",
+    "as seen on tv!",
+    "removed herobrine.",
+    "error: could not load quote.",
+    "gotta get down on friday.",
+    "in nineteen ninety eight the undertaker threw mankind off hell in a cell and plummeted sixteen feet through an announcer's table."
 ]
