@@ -49,5 +49,6 @@ quotes = [
     "bamboleo.",
     "all the old paintings on the tomb, they do the sun dance, don'tcha know?",
     "it's the london to brighton line.",
-    "drive that funky soul."
+    "drive that funky soul.",
+    "tea. earl gray. hot.",
 ]
