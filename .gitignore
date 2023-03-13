@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# tailwind compiled
+website/assets/tailwind.css
