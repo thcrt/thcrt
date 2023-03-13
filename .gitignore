@@ -130,4 +130,4 @@ dmypy.json
 
 
 # tailwind compiled
-website/assets/tailwind.css
+website/static/tailwind.css
