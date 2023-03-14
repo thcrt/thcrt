@@ -58,4 +58,7 @@ quotes = [
     "dragons were never gone. they were just invisible and very, very quiet.",
     "werebears? where? bears?",
     "snow falls. why worry where it goes?",
+    "the history of all hitherto existing society is the history of class struggles.",
+    "i am fond of pigs.",
+    "we ought to make the pie higher.",
 ]
