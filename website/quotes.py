@@ -51,4 +51,11 @@ quotes = [
     "it's the london to brighton line.",
     "drive that funky soul.",
     "tea. earl gray. hot.",
+    "there is no try.",
+    "that's no moon.",
+    "everything not saved will be lost.",
+    "let me guess. someone stole your sweetroll?",
+    "dragons were never gone. they were just invisible and very, very quiet.",
+    "werebears? where? bears?",
+    "snow falls. why worry where it goes?",
 ]
