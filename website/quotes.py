@@ -61,4 +61,5 @@ quotes = [
     "the history of all hitherto existing society is the history of class struggles.",
     "i am fond of pigs.",
     "we ought to make the pie higher.",
+    "she take me money and run venezuela.",
 ]
