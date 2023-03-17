@@ -62,4 +62,5 @@ quotes = [
     "i am fond of pigs.",
     "we ought to make the pie higher.",
     "she take me money and run venezuela.",
+    "sixteen tons, and whaddaya get? another day older, and deeper in debt.",
 ]
