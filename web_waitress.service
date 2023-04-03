@@ -7,7 +7,7 @@ After=network.target
 Type=simple
 User=alex
 WorkingDirectory=/home/alex
-ExecStart=/home/alex/alexmshepherd.com/venv/bin/python3 -m /home/alex/alexmshepherd.com/website
+ExecStart=/home/alex/alexmshepherd.com/venv/bin/python3 /home/alex/alexmshepherd.com/website/__init__.py
 Restart=always
 
 [Install]
