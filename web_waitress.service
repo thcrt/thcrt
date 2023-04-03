@@ -6,8 +6,8 @@ After=network.target
 [Service]
 Type=simple
 User=alex
-WorkingDirectory=/home/alex
-ExecStart=/home/alex/alexmshepherd.com/venv/bin/python3 -m /home/alex/alexmshepherd.com/website
+WorkingDirectory=/home/alex/alexmshepherd.com
+ExecStart=venv/bin/python3 -m website
 Restart=always
 
 [Install]
