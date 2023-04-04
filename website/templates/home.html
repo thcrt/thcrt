@@ -1,56 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>alex m shepherd</title>
-        
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        <link rel="stylesheet" href="/static/tailwind.css">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends "base.html" %}
 
-    </head>
-    <body class="flex flex-col px-10 py-7 h-screen bg-slate-100 text-slate-800">
-        <header>
-            <h1 class="pb-2 text-6xl font-black text-transparent bg-clip-text bg-contain bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 w-fit">
-                alex martin shepherd
-            </h1>
-            <h2 class="text-3xl italic font-semibold text-slate-600">
-                {{ quote }}
-            </h2>
-        </header>
-        <main class="py-7 space-y-4">
-            <div>
-                <p>
-                    <em class="not-italic font-bold">hi!</em> my name's alex. i'm a programmer, an event technician and also a photographer.
-                </p>
-                <p>
-                    i believe in open-source software, privacy and other human rights, and the abolition of class.
-                </p>
-                <p>
-                    i'm actively looking for work. if you have software that needs building, a play that needs lighting or photos that need taking, please get in touch.
-                </p>
-            </div>
-            <div>    
-                here are some things i've made:
-                <ul class="ml-10 list-disc">
-                    <li><a class="font-semibold text-blue-600" href="https://owdex.com">owdex</a>&mdash;an open, community-curated search index</li>
-                    <li><a class="font-semibold text-blue-600" href="https://botsin.space/@duckhunter">duck hunter</a>&mdash;the classic duck hunting game from irc, now on the fediverse</li>
-                </ul>
-            </div>
-            <div>
-                here's where you can find me:
-                <ul class="ml-10 list-disc">
-                    <li><a class="font-semibold text-blue-600" rel="me" href="https://akko.alexmshepherd.com/alex">@alex@akko.alexmshepherd.com</a> on the fediverse</li>
-                    <li><a class="font-semibold text-blue-600" rel="me" href="https://github.com/alexmshepherd">@alexmshepherd</a> on github</li>
-                    <li><span class="font-semibold">@amshepherd:matrix.org</span> on matrix</li>
-                    <li><a class="font-semibold text-green-600" rel="me" href="mailto:alex@alexmshepherd.com">alex@alexmshepherd.com</a> through email</li>
-                </ul>
-            </div>
-        </main>
-        <footer class="mt-auto text-xs font-medium">
-            this webpage is website is the copyrighted property of Alex Martin Shepherd. <br>
-            all rights to the webpage's <a href="https://github.com/alexmshepherd/alexmshepherd.com" class="font-semibold text-blue-600">code</a>, excluding contents (as defined below), are waived to the maximum extent possible under law. <br>
-            all rights to the webpage's contents, defined as media intended for direct consumption (including but not limited to text, images and video) are reserved unless otherwise stated. 
-        </footer>
-    </body>
-</html>
+{% block heading %}
+{{ quote }}
+{% endblock heading %}
+
+{% block heading_classes %}
+italic
+{% endblock heading_classes %}
+
+{% block main %}
+<div>
+    <p>
+        <em class="not-italic font-bold">hi!</em> my name's alex. i'm a programmer, an event technician and also a photographer.
+    </p>
+    <p>
+        i believe in open-source software, privacy and other human rights, and the abolition of class.
+    </p>
+    <p>
+        i'm actively looking for work. if you have software that needs building, a play that needs lighting or photos that need taking, please get in touch.
+    </p>
+</div>
+<div>    
+    here are some things i've made:
+    <ul class="ml-10 list-disc">
+        <li><a class="font-semibold text-blue-600" href="https://owdex.com">owdex</a>&mdash;an open, community-curated search index</li>
+        <li><a class="font-semibold text-blue-600" href="https://botsin.space/@duckhunter">duck hunter</a>&mdash;the classic duck hunting game from irc, now on the fediverse</li>
+    </ul>
+</div>
+<div>
+    here's where you can find me:
+    <ul class="ml-10 list-disc">
+        <li><a class="font-semibold text-blue-600" rel="me" href="https://akko.alexmshepherd.com/alex">@alex@akko.alexmshepherd.com</a> on the fediverse</li>
+        <li><a class="font-semibold text-blue-600" rel="me" href="https://github.com/alexmshepherd">@alexmshepherd</a> on github</li>
+        <li><span class="font-semibold">@amshepherd:matrix.org</span> on matrix</li>
+        <li><a class="font-semibold text-green-600" rel="me" href="mailto:alex@alexmshepherd.com">alex@alexmshepherd.com</a> through email</li>
+    </ul>
+</div>
+{% endblock main %}
+
+{% block main_classes %}
+space-y-4
+{% endblock main_classes %}
