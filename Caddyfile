@@ -1,0 +1,11 @@
+{
+	email alex@alexmshepherd.com
+}
+
+alexmshepherd.com {
+	reverse_proxy http://localhost:8080
+}
+
+www.alexmshepherd.com {
+	redir https://alexmshepherd.com{uri} permanent
+}

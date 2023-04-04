@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+
+  flask:
+    container_name: flask
+    build: .
+    
+    expose:
+      - 80
+
+
+  caddy:
+    container_name: caddy
+    image: caddy
+
+    ports:
+      - 443:443
+      - 80:80
+    volumes:
+      - ./caddy_data:/data
+      - ./Caddyfile:/etc/caddy/Caddyfile
