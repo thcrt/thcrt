@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+posts
+{% endblock title %}
+
+{% block heading %}
+posts
+{% endblock heading %}
+
+{% block main %}
+<ul>
+{% for slug, title in posts.items() %}
+	<li>
+		<a href="{{slug}}">{{title}}</a>
+	</li>
+{% endfor %}
+</ul>
+{% endblock main %}
