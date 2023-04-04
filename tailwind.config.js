@@ -3,13 +3,10 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  
-}
-module.exports = {
     content: {
       relative: true,
       files: [
-        "./website/templates/*.html"
+        "./templates/*.html"
       ]
     },
     theme: {
