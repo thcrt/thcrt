@@ -1,7 +1,7 @@
 <ul>
 	{% for slug in posts %}
-		<li class="list-disc">
-			<a href="{{slug}}">{{ slug.split("-")|join(" ") }}</a>
+		<li class="ml-10 list-disc">
+			<a href="{{slug}}" class="font-semibold text-blue-600">{{ slug.split("-")|join(" ") }}</a>
 		</li>
 	{% endfor %}
 </ul>
