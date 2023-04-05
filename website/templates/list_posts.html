@@ -1,0 +1,7 @@
+<ul>
+	{% for slug in posts %}
+		<li>
+			<a href="{{slug}}">{{ slug.split("-")|join(" ") }}</a>
+		</li>
+	{% endfor %}
+</ul>
