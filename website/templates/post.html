@@ -9,5 +9,7 @@
 {% endblock heading %}
 
 {% block main %}
-{{ content | safe }}
+<article class="prose prose-slate">
+	{{ content | safe }}
+</article>
 {% endblock main %}

@@ -1,6 +1,6 @@
 FROM node:19-alpine AS tailwind_build
 WORKDIR /build
-RUN npm install tailwindcss
+RUN npm install tailwindcss @tailwindcss/typography
 COPY website/templates tailwind.config.js ./
 RUN npx tailwindcss -o build.css --minify
 
