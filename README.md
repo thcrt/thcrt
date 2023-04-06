@@ -2,4 +2,6 @@
 
 i believe in open-source software, privacy and other human rights, and the abolition of class.
 
-i'm actively looking for work. if you have software that needs building, a play that needs lighting or photos that need taking, please get in touch.
+recently, i've been working on [Owdex](https://github.com/owdex/owdex), an alternative to traditional search engines for a more open, free and useful web.
+
+you can contact me [on the Fediverse](https://akko.alexmshepherd.com/alex), or find out more on my [website](https://alexmshepherd.com).
