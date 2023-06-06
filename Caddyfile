@@ -1,11 +1,11 @@
 {
-	email alex@alexmshepherd.com
+	email webmaster@theocourt.com
 }
 
-alexmshepherd.com {
+theocourt.com {
 	reverse_proxy http://flask:8080
 }
 
-www.alexmshepherd.com {
-	redir https://alexmshepherd.com{uri} permanent
+www.theocourt.com {
+	redir https://theocourt.com{uri} permanent
 }
