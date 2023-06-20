@@ -4,4 +4,4 @@ i believe in open-source software, privacy and other human rights, and the aboli
 
 recently, i've been working on [Owdex](https://github.com/owdex/owdex), an alternative to traditional search engines for a more open, free and useful web.
 
-you can contact me [on the Fediverse](https://glitch.theocourt.com/theo), or find out more on my [website](https://theocourt.com).
+you can contact me [on the Fediverse](https://glitch.theocourt.com/@theo), or find out more on my [website](https://theocourt.com).
