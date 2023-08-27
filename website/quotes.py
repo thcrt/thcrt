@@ -2,7 +2,7 @@
 quotes = [
     "style is the answer to everything.",
     "a dull thing with style is preferable to a dangerous thing without it.",
-    "to do a dangerous thing with style is what i call art.",
+    "a dangerous thing with style is what i call art.",
     "five is right out.",
     "you must construct additional pylons.",
     "don't panic.",
@@ -58,12 +58,13 @@ quotes = [
     "dragons were just invisible and very, very quiet.",
     "werebears? where? bears?",
     "snow falls. why worry where it goes?",
-    "the history of all hitherto existing society is the history of class struggles.",
+    "the history of society is the history of class struggles.",
     "i am fond of pigs.",
     "we ought to make the pie higher.",
     "she take me money and run venezuela.",
     "another day older, and deeper in debt.",
     "to dance the bamba...",
     "can i get to the yams?",
-    "the only thing better than perfect is standardised."
+    "the only thing better than perfect is standardised.",
+    "eat pasta. run fasta."
 ]
