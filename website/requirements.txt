@@ -10,4 +10,4 @@ six==1.16.0
 svgwrite==1.4.3
 waitress==2.1.2
 wavedrom==2.0.3.post3
-Werkzeug==2.2.3
+Werkzeug==2.3.7
