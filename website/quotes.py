@@ -99,4 +99,10 @@ quotes = [
     "oh, sinnerman, where you gonna run to?",
     "all on that day.",
     "so i ran to the devil, he was waiting.",
+    "install GuixSD!",
+    "i use arch btw.",
+    "i am gravely disappointed.",
+    ":;",
+    "<script>alert('pwned');</script>",
+    "bobby');DROP TABLE quotes;--"
 ]
