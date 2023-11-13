@@ -1,7 +1,0 @@
-<ul class="my-2 ml-10 list-disc">
-	{% for slug in posts %}
-		<li >
-			<a href="{{ url_for('blog.post', slug=slug) }}" class="font-semibold text-blue-600">{{ slug.split("-")|join(" ") }}</a>
-		</li>
-	{% endfor %}
-</ul>

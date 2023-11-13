@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "thcrt"
+version = "0.1.0"
+description = "My personal website"
+authors = ["Theo Court (thcrt)"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.0"
+waitress = "^2.1.2"
+markdown2 = "^2.4.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
