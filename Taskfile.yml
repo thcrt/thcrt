@@ -1,0 +1,17 @@
+version: "3"
+
+tasks:
+
+  tailwind:
+    internal: true
+    cmds:
+      - npx tailwindcss -o thcrt/static/tailwind.css --minify --watch
+
+  serve: poetry run flask --app thcrt run --debug
+
+  default:
+    aliases: [run]
+    deps:
+      - tailwind
+      - serve
+
