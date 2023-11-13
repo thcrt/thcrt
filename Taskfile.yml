@@ -1,7 +1,6 @@
 version: "3"
 
 tasks:
-
   tailwind:
     internal: true
     cmds:
@@ -14,4 +13,3 @@ tasks:
     deps:
       - tailwind
       - serve
-

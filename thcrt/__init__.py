@@ -2,9 +2,9 @@ from pathlib import Path
 
 import flask as f
 
-from .postmanager import PostManager
-from .page import page
 from .blog import blog_bp
+from .page import page
+from .postmanager import PostManager
 
 
 def create_app():
