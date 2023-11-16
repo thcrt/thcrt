@@ -1,16 +1,39 @@
-[tool.poetry]
-name = "thcrt"
-version = "0.1.0"
-description = "My personal website"
-authors = ["Theo Court (thcrt)"]
-readme = "README.md"
+[project]
+  name = "thcrt"
+  description = "My personal website"
+  version = "1.1.0"
+  requires-python = ">=3.12"
 
-[tool.poetry.dependencies]
-python = "^3.11"
-flask = "^3.0.0"
-waitress = "^2.1.2"
-markdown2 = "^2.4.10"
+  readme = "README.md"
+  authors = [
+    { name="Theo Court", email="pypkg@theocourt.com" },
+  ]
+
+  classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Framework :: Flask",
+    "Natural Language :: English",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+  ]
+
+  dependencies = [
+    "flask == 3.0.0",
+    "waitress == 2.1.2",
+    "markdown2 == 2.4.10"
+  ]
+
+  [project.urls]
+    "Homepage" = "https://github.com/thcrt/thcrt"
+    "Bug Tracker" = "https://github.com/thcrt/thcrt/issues"
+  
+  [project.scripts]
+    thcrt = "thcrt:__main__"
+
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+  requires = ["setuptools==68.2.2"]
+  build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+  where = ["."]

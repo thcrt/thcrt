@@ -1,19 +1,6 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Python
+dist/
+*.egg-info/
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# tailwind compiled
-thcrt/static/tailwind.css
-
-# NPM
-node_modules/
+# compiled CSS
+thcrt/static/build.css

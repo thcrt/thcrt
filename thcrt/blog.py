@@ -1,7 +1,7 @@
 import flask as f
 from flask import current_app as app
 
-blog_bp = f.Blueprint("blog", __name__, template_folder="templates")
+blog_bp = f.Blueprint("blog", __name__)
 
 
 @blog_bp.route("/")
