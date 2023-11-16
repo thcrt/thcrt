@@ -5,7 +5,7 @@ from flask import current_app as app
 
 from .quotes import quotes
 
-page = f.Blueprint("page", __name__, template_folder="templates")
+page = f.Blueprint("page", __name__)
 
 
 POSTS_ON_HOMEPAGE = 3
