@@ -4,14 +4,10 @@
     {{ quote }}
 {% endblock heading %}
 
-{% block heading_classes %}
-    italic
-{% endblock heading_classes %}
-
 {% block main %}
     <div>
         <p>
-            <em class="not-italic font-bold">hi!</em> my name's theo. i'm a programmer, an event technician and also a photographer.
+            <em>hi!</em> my name's theo. i'm a programmer, an event technician and also a photographer.
         </p>
         <p>
             i believe in open-source software, privacy and other human rights, and the abolition of class.
@@ -22,26 +18,22 @@
     </div>
     <div>
         here are some things i've made:
-        <ul class="my-2 ml-10 list-disc">
-            <li><a class="font-semibold text-blue-600" href="https://owdex.com">owdex</a>&mdash;an open, community-curated search index</li>
-            <li><a class="font-semibold text-blue-600" href="https://botsin.space/@duckhunter">duck hunter</a>&mdash;the classic duck hunting game from irc, now on the fediverse</li>
+        <ul>
+            <li><a href="https://owdex.com">owdex</a>&mdash;an open, community-curated search index</li>
+            <li><a href="https://botsin.space/@duckhunter">duck hunter</a>&mdash;the classic duck hunting game from irc, now on the fediverse</li>
         </ul>
     </div>
     <div>
         here's where you can find me:
-        <ul class="my-2 ml-10 list-disc">
-            <li><a class="font-semibold text-blue-600" rel="me" href="https://glitch.theocourt.com/@theo">@theo@glitch.theocourt.com</a> on the fediverse</li>
-            <li><a class="font-semibold text-blue-600" rel="me" href="https://github.com/thcrt">@thcrt</a> on github</li>
-            <li><a class="font-semibold text-green-600" rel="me" href="mailto:hi@theocourt.com">hi@theocourt.com</a> through email</li>
+        <ul>
+            <li><a rel="me" href="https://glitch.theocourt.com/@theo">@theo@glitch.theocourt.com</a> on the fediverse</li>
+            <li><a rel="me" href="https://github.com/thcrt">@thcrt</a> on github</li>
+            <li><a rel="me" href="mailto:hi@theocourt.com">hi@theocourt.com</a> through email</li>
         </ul>
     </div>
     <div>
         i have a blog. here are some recent posts from it:
         {% include "list_posts.html" %}
-        you can see the rest <a class="font-semibold text-blue-600" href="{{ url_for('blog.posts') }}">here</a>.
+        you can see the rest <a href="{{ url_for('blog.posts') }}">here</a>.
     </div>
 {% endblock main %}
-
-{% block main_classes %}
-    space-y-4
-{% endblock main_classes %}

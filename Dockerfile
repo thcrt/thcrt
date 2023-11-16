@@ -1,17 +1,9 @@
 # syntax=docker/dockerfile:1.5
 
-FROM node:21.2.0-bookworm-slim AS build-tailwind
-  WORKDIR /build
-  RUN npm --quiet install tailwindcss @tailwindcss/typography
-  COPY thcrt/templates tailwind.config.js ./
-  RUN npx --quiet tailwindcss --output build.css --minify
-
-
 FROM python:3.12.0-slim-bookworm AS build-python
   WORKDIR /build
   RUN pip install build
   COPY . .
-  COPY --from=build-tailwind /build/build.css ./thcrt/static
   RUN python -m build
 
 

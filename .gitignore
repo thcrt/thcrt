@@ -1,6 +1,3 @@
 # Python
 dist/
 *.egg-info/
-
-# compiled CSS
-thcrt/static/build.css
