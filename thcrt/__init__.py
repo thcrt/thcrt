@@ -1,5 +1,5 @@
+from importlib.resources import as_file, files
 from pathlib import Path
-from importlib.resources import files, as_file
 
 import flask as f
 
@@ -10,7 +10,11 @@ from .postmanager import PostManager
 
 def create_app():
     with as_file(files("thcrt")) as data_files:
-        app = f.Flask("website", template_folder=data_files / "templates", static_folder=data_files / "static")
+        app = f.Flask(
+            "website",
+            template_folder=data_files / "templates",
+            static_folder=data_files / "static",
+        )
         app.pm = PostManager(data_files / "posts")
 
     with app.app_context():
