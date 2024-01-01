@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.5
 
-FROM node:21.2.0-bookworm-slim AS build-tailwind
+FROM node:21.5.0-bookworm-slim AS build-tailwind
   WORKDIR /build
   RUN npm --quiet install tailwindcss @tailwindcss/typography
   COPY thcrt/templates tailwind.config.js ./
