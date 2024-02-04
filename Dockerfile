@@ -17,8 +17,8 @@ FROM python:3.12.1-slim-bookworm AS build-python
 
 FROM python:3.12.1-slim-bookworm AS serve
   RUN useradd --create-home --user-group --uid 1000 --home-dir /server server
-  RUN apt-get --quiet update \
-   && apt-get --quiet upgrade
+  RUN apt-get --yes --quiet update \
+   && apt-get --yes --quiet upgrade
   USER server
   WORKDIR /server
 
