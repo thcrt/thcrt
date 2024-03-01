@@ -7,7 +7,7 @@ FROM node:21.6.1-bookworm-slim AS build-tailwind
   RUN npx --quiet tailwindcss --output build.css --minify
 
 
-FROM python:3.12.1-slim-bookworm AS build-python
+FROM python:3.12.2-slim-bookworm AS build-python
   WORKDIR /build
   RUN pip install build
   COPY . .
@@ -15,7 +15,7 @@ FROM python:3.12.1-slim-bookworm AS build-python
   RUN python -m build
 
 
-FROM python:3.12.1-slim-bookworm AS serve
+FROM python:3.12.2-slim-bookworm AS serve
   RUN useradd --create-home --user-group --uid 1000 --home-dir /server server
   RUN apt-get --yes --quiet update \
    && apt-get --yes --quiet upgrade
