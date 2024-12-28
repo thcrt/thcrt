@@ -1,0 +1,173 @@
+@layer reset {
+    /*
+        Josh's Custom CSS Reset
+        https://www.joshwcomeau.com/css/custom-css-reset/
+    */
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    * {
+        margin: 0;
+        line-height: calc(1em + 0.5rem);
+    }
+
+    body {
+        -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        overflow-wrap: break-word;
+    }
+
+    p {
+        text-wrap: pretty;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-wrap: balance;
+    }
+
+    #root,
+    #__next {
+        isolation: isolate;
+    }
+}
+
+@layer inter {
+    :root {
+        font-family: Inter, sans-serif;
+
+        /* fix for Chrome */
+        font-feature-settings: 'liga' 1, 'calt' 1;
+    }
+
+    @supports (font-variation-settings: normal) {
+        :root {
+            font-family: InterVariable, sans-serif;
+        }
+    }
+}
+
+@layer theme {
+    :root {
+        --palette-slate-50: #f8fafc;
+        --palette-slate-100: #f1f5f9;
+        --palette-slate-200: #e2e8f0;
+        --palette-slate-300: #cbd5e1;
+        --palette-slate-400: #94a3b8;
+        --palette-slate-500: #64748b;
+        --palette-slate-600: #475569;
+        --palette-slate-700: #334155;
+        --palette-slate-800: #1e293b;
+        --palette-slate-900: #0f172a;
+        --palette-slate-950: #020617;
+
+        --palette-teal-50: #f0fdfa;
+        --palette-teal-100: #ccfbf1;
+        --palette-teal-200: #99f6e4;
+        --palette-teal-300: #5eead4;
+        --palette-teal-400: #2dd4bf;
+        --palette-teal-500: #14b8a6;
+        --palette-teal-600: #0d9488;
+        --palette-teal-700: #0f766e;
+        --palette-teal-800: #115e59;
+        --palette-teal-900: #134e4a;
+        --palette-teal-950: #042f2e;
+        
+        --theme-radius: 12px;
+
+        --theme-color-bg: var(--palette-slate-200);
+        --theme-color-fg: var(--palette-slate-900);
+        --theme-color-muted: var(--palette-slate-600);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --theme-color-bg: var(--palette-slate-900);
+            --theme-color-fg: var(--palette-slate-200);
+            --theme-color-muted: var(--palette-slate-400);
+        }
+    }
+}
+
+
+body {
+    background-color: var(--theme-color-bg);
+    color: var(--theme-color-fg);
+
+    height: 100dvh;
+    max-width: 50rem;
+    padding: 2rem;
+    margin-inline: auto;
+
+    font-size: 1.125rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+* {
+    text-decoration-skip-ink: all;
+}
+
+a {
+    color: var(--palette-teal-500);
+    text-decoration: underline 2px;
+
+}
+
+header > i {
+    color: var(--theme-color-muted);
+    text-decoration: underline dashed 2px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.pronouns {
+    font-size: 0.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-block: 1rem;
+}
+
+footer {
+    color: var(--theme-color-muted);
+    font-size: 0.8rem;
+    margin-block-start: auto;
+}

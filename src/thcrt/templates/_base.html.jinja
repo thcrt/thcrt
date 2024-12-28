@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>theo court</title>
+        <meta name="description" content="hi! this is my personal website." />
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+        <script type="module" src="{{ url_for('static', filename='quotes.js') }}"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                theo court
+                <span class="pronouns">(he/him)</span>
+            </h1>
+            <i id="quote">who needs javascript anyway?</i>
+        </header>
+
+        <main>
+            {% block content %}
+            {% endblock content %}
+        </main>
+
+        <footer>
+            © 2024 Theo Court
+        </footer>
+
+    </body>
+</html>
