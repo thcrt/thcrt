@@ -126,7 +126,7 @@ body {
     background-color: var(--theme-color-bg);
     color: var(--theme-color-fg);
 
-    height: 100dvh;
+    min-height: 100dvh;
     max-width: 50rem;
     padding: 2rem;
     margin-inline: auto;
