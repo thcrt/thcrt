@@ -1,0 +1,167 @@
+---
+id: 1
+title: Reddit isn't immune to spam
+published: true
+date_published: 2023-11-16T16:28:13
+---
+
+<p>
+    If you're anything like me, you've developed a habit when searching for information on the web.
+    You append <code>site:reddit.com</code> to your searches.
+</p>
+
+<p>
+    Reddit, for all its flaws and quirks, has historically been a very good way to find information
+    on pretty much any topic. You name a problem, someone on Reddit has already had it and others
+    have jumped in to their aid. Not to mention the abundance of reviews, FAQs and buying guides for
+    all manner of products. That's what led me to search for electric toothbrushes with my trusty
+    Reddit suffix.
+</p>
+
+<p>
+    And lo and behold, there were answers.
+</p>
+
+<img
+    src="{{ url_for('.static', filename='reddit-toothbrush-search.png') }}"
+    alt="A Google search for “best electric toothbrush” with results limited to Reddit posts."
+>
+
+<p>
+    As we can see, there are plenty of results. But hold on. Those post titles look unusually...
+    SEO-ish. What's going on here?
+</p>
+
+<p>
+    Following many of the links will take us to a couple of subreddits, including
+    <code>r/ElectricToothbrush</code> and <code>r/MyElectricToothbrush</code>. That's odd. I can
+    imagine that a subreddit set up to discuss electric toothbrushes may exist. But two? What kind
+    of debate inside the moderation team of an <i>electric toothbrush forum</i> could cause such a
+    schism? Let's take a look at what the posts actually say.
+</p>
+
+<img
+    src="{{ url_for('.static', filename='reddit-toothbrush-post.png') }}"
+    alt="A Reddit post describing the “Best Electric Toothbrush For 2022”.
+         It, and the subreddit it's on, look suspiciously like SEO spam."
+>
+
+<p>
+    Well, there's a surprise. These posts are actually spam. Out of the 10 posts featured on the
+    first page of Google, only three were (at least on the surface) legit, coming from
+    <code>r/BuyItForLife</code>, <code>r/BestOfTech</code> and <code>r/AskReddit</code>
+    respectively. The rest are largely from our two main offenders already listed, with some cameo
+    appearances from <code>r/BestRedditProducts</code> (what does that even mean?) and
+    <code>r/TechGods2021</code> (apparently the spammers are trying to appeal to ten-year-olds.)
+</p>
+
+<p>
+    The subreddit itself also smells fishy. Instead of a customised Snoo (the weird alien mascot
+    that most subreddits spin off), this place just has a marketing photo. It goes without saying
+    that the description is also clearly written in SEO-ese. If this were really a subreddit for
+    electric toothbrush enthusiasts (hey, you never know) you'd also expect a creation date a bit
+    later than December of 2020. And sure enough, the subreddit's front page has a pinned moderator
+    post with the following text, which I must say is a true masterpiece:
+</p>
+
+<blockquote>
+    <p>
+        Let everyone help you. Read everyone!
+    </p>
+
+    <p>
+        Share your ideas and also experiences inside this community. This Reddit is an unknown place.
+        You can post and present any matter inside this community. any matter you post here we don't
+        know who you are. So you can post here anything about electric toothbrush-related things like
+        experiences, ideas, and also funny things. if anyone posts any unrelated post here like
+        harassment or bullying we will surely remove them. So please be careful when you post and
+        comment here.
+    </p>
+
+    <p>
+        Whatever your post here, experienced people will help you to solve that.
+    </p>
+
+    <p>
+        So happy posting!
+    </p>
+</blockquote>
+
+<p>
+    Exactly what possible "funny things" related to electric toothbrushes the moderator,
+    <code>u/lyssrafealla</code>, believes may crop up is not clear.
+</p>
+
+<p>
+    But hold on. What's the goal of this whole exercise? Normally, this kind of SEO garbage serves
+    mostly to drive clicks and gain ad revenue. But this is Reddit. The ads (and, on desktop and
+    viewing one post, there aren't many) only give money to Reddit itself. Well, it becomes clear
+    when you actually click on one of the links within the post.
+</p>
+
+
+<img
+    src="{{ url_for('.static', filename='reddit-toothbrush-site.png') }}"
+    alt="A website called “Best Tech Zone”, with a low-quality article about electric toothbrushes."
+>
+
+<p>
+    The posts link to a website hosting equally spammy articles about everything from electric
+    toothbrushes to portable speakers to beach chairs. Apparently the definition of "tech" is
+    broader than I thought. But this website, too, is remarkably ad-free. So where does the money
+    actually come from? Well, throughout each post is strewn a number of Amazon affiliate links.
+    These links are part of Amazon's affiliate program, where registered accounts can create links
+    to Amazon product pages and recieve a cut (20% in Amazon Games, 10% in Fashion and Handmade,
+    much less in everything else) of any purchases made through that link. Curiously, these profits
+    will apply to <i>any</i> product purchased through the link, not just the product directly
+    linked to: you can navigate to other pages on the site and the link creator will still get a
+    cut, which is greater if the <i>category</i> of the product matches the category of the product
+    linked to.
+</p>
+
+<p>
+    So, to recap:
+</p>
+
+<ol>
+    <li>
+        An unwitting individual wants purchasing advice.
+    </li>
+    <li>
+        They search for existing material on the topic in a way they expect to serve quality results.
+    </li>
+    <li>
+        They click on a link to a post created by the bad guys.
+    </li>
+    <li>
+        That post contains further links to the bad guys' website...
+    </li>
+    <li>
+        Which in turn contains yet further links to Amazon...
+    </li>
+    <li>
+        From which the bad guys turn a tiny profit.
+    </li>
+</ol>
+
+<p>
+    <i>Seriously? All this for an affiliate link and a few cents for everyone dedicated enough to
+    follow through this entire process?</i>
+</p>
+
+<p>
+    Yep. The thing that gets me is: why not just post the Amazon affiliate links directly? The only
+    thing I can think of is that Reddit might automatically flag posts containing too many affiliate
+    links, but I can't find this behaviour documented anywhere, and since the people making the
+    posts are the same as the people running the subreddit it can't be a local, moderator-actionable
+    issue. This seems like a lot of effort to go through all to make a very small amount of money,
+    but I guess it's worth it for whoever's doing it.
+</p>
+
+<p>
+    So what can you do? Well, I'm working on a
+    <a href="https://github.com/owdex/owdex">search engine</a> to cut through junk search results
+    and just show what's important (fully open-source and private, obviously). In the mean time, it
+    may be worth it to be a little more vigilant when it comes to search results, even when they're
+    from Reddit. █
+</p>

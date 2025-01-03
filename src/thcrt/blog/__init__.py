@@ -25,4 +25,4 @@ def index():
 @bp.route("/<int:id>")
 def show_post(id: int):
     post = posts[id]
-    return f.render_template("blog/post.html.jinja", metadata=post.metadata, content=post.content)
+    return f.render_template("blog/post.html.jinja", metadata=post.metadata, content=f.render_template_string(post.content))
