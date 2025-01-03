@@ -144,13 +144,14 @@ body {
 
 a {
     color: var(--palette-teal-500);
-    text-decoration: underline 2px;
-
+    text-decoration-thickness: 2px;
 }
 
 header > i {
     color: var(--theme-color-muted);
-    text-decoration: underline dashed 2px;
+    text-decoration-style: dashed;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
     cursor: pointer;
     user-select: none;
 }
@@ -221,7 +222,7 @@ a.preview {
         background-color: rgb(255, 255, 255, 0.05);
 
         h2 {
-            text-decoration: underline;
+            text-decoration-line: underline;
         }
     }
 }
