@@ -25,6 +25,21 @@
             <i id="quote">who needs javascript anyway?</i>
         </header>
 
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">
+                        home
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('blog.index') }}">
+                        blog
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <main>
             {% block content %}
             {% endblock content %}

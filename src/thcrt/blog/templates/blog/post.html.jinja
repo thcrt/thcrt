@@ -1,0 +1,24 @@
+{% extends "_base.html.jinja" %}
+
+{% block content %}
+
+<article>
+    <header>
+        <h2>
+            {{ metadata.title }}
+        </h2>
+        {% if metadata.date_published %}
+            <p>
+                Published <time datetime="{{ metadata.date_published }}" title="{{ metadata.date_published }}">{{ metadata.delta_published }}</time>.
+                {% if metadata.date_updated %}
+                    Last updated <time datetime="{{ metadata.date_updated }}" title="{{ metadata.date_updated }}">{{ metadata.delta_updated }}</time>.
+                {% endif %}
+            </p>
+        {% endif %}
+    </header>
+    <div>
+        {{ content }}
+    </div>
+</article>
+
+{% endblock content %}

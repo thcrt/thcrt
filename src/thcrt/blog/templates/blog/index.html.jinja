@@ -1,0 +1,19 @@
+{% extends "_base.html.jinja" %}
+
+{% block content %}
+
+{% for post in posts %}
+    {% if post.metadata.published %}
+        <a class="preview" href="{{ url_for('.show_post', id=post.metadata.id) }}">
+            <div>
+                <h2>{{ post.metadata.title }}</h2>
+                {% if post.metadata.date_published %}
+                    <time datetime="{{ post.metadata.date_published }}" title="{{ post.metadata.date_published }}">{{ post.metadata.delta_published }}</time>
+                {% endif %}
+            </div>
+            <p>{{ post.content | truncate(150) }}</p>
+        </a>
+    {% endif %}
+{% endfor %}
+
+{% endblock content %}
