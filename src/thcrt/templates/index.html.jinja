@@ -1,4 +1,5 @@
 {% extends "_base.html.jinja" %}
+{% from "components/pixelbutton.html.jinja" import pixelbutton as pb %}
 
 {% block content %}
 
@@ -10,29 +11,37 @@
 
 	<p>
 		i don't use much social media. here's where you can find me:
-		
-		<ul>
-			<li>
-				<a rel="me" href="https://fops.cloud/thcrt">
-					the Fediverse
-				</a>
-			</li>
-			<li>
-				<a rel="me" href="https://github.com/thcrt">
-					GitHub
-				</a>
-			</li>
-			<li>
-				<a rel="me" href="https://bsky.app/profile/theocourt.com">
-					Bluesky
-				</a>
-			</li>
-			<li>
-				<a href="mailto:hello@theocourt.com">
-					Email
-				</a>
-			</li>
-		</ul>
 	</p>
+
+	<ul>
+		<li>
+			<a rel="me" href="https://fops.cloud/thcrt">
+				the Fediverse
+			</a>
+		</li>
+		<li>
+			<a rel="me" href="https://github.com/thcrt">
+				GitHub
+			</a>
+		</li>
+		<li>
+			<a rel="me" href="https://bsky.app/profile/theocourt.com">
+				Bluesky
+			</a>
+		</li>
+		<li>
+			<a href="mailto:hello@theocourt.com">
+				Email
+			</a>
+		</li>
+	</ul>
+		
+	<div id="buttons">
+		<img src="{{ url_for('static', filename='88x31.png') }}" alt="theo">
+		{{ pb("https://void.rehab/88x31/void.rehab.png", "https://void.rehab", "void.rehab") }}
+		{{ pb("https://redcatho.de/buttons/red.png", "https://redcatho.de", "redcathode") }}
+		{{ pb("https://ersei.net/user/pages/01.home/buttons/ersei.gif", "https://ersei.net", "ersei") }}
+		{{ pb("https://seirdy.one/sticker_88x31.png", "https://seirdy.one", "Seirdy") }}
+	</div>
 
 {% endblock content %}
