@@ -271,3 +271,36 @@ blockquote {
 #buttons img:hover {
     opacity: 100%;
 }
+
+.dictionary-definition {
+    font-size: 1rem;
+    margin-block-end: 1rem;
+}
+
+.dictionary-definition>:first-child {
+    font-weight: bolder;
+}
+
+.dictionary-definition > *:not(:first-child, :last-child) {
+    margin-inline-start: 1.5rem;
+}
+
+.dictionary-definition > :last-child {
+    text-align: end;
+    color: var(--theme-color-muted);
+    font-size: 0.9rem;
+}
+
+.dictionary-definition > :nth-last-child(2) {
+    margin-block-end: 0;
+}
+
+.dictionary-definition > p > i {
+    color: var(--theme-color-muted);
+}
+
+.dictionary-definition a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    color: inherit;
+}

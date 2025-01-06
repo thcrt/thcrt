@@ -1,0 +1,72 @@
+{% extends "_base.html.jinja" %}
+
+{% block content %}
+
+    <blockquote class="dictionary-definition" cite="https://en.wiktionary.org/wiki/colophon">
+    
+        <p>
+            <dfn>colophon</dfn> (noun, plural <dfn>colophons</dfn>):
+        </p>
+        
+        <p>
+            <i>(printing, publishing)</i> In manuscripts (typically before the invention of
+            printing), the note, usually at the end, left by the scribe who copied it, giving
+            information on their exemplar, where and when the copy was made, and sometimes, their
+            own name.
+        </p>
+
+        <p>
+            <i>(by extension, Internet)</i> A page on a website identifying the details of its
+            creation, such as the author's name and the technologies used.
+        </p>
+
+        <p>
+            <a href="https://en.wiktionary.org/wiki/colophon"><cite>Colophon</cite>, Wiktionary</a>
+        </p>
+
+    </blockquote>
+
+    <h3>
+        how it works
+    </h3>
+
+    <p>
+        this site's code is written in Python, using the
+        <a href="https://flask.palletsprojects.com/">Flask</a> web framework. almost everything is
+        implemented on the server, and where javascript is used, it's not required in order to read
+        the site's content normally.
+    </p>
+
+    <p>
+        for ease of deployment, i use docker to run this site in production. images get built
+        automatically for each new commit.
+    </p>
+
+    <p>
+        everything gets run on a <a href="https://hetzner.cloud/?ref=fU9YkqLHWV6o">Hetzner Cloud</a>
+        CAX21 VPS. full disclosure: that's an affiliate link, which will get you 20€ of credit. i
+        don't expect anyone to actually use it, but hey, it's worth a shot, right? 
+    </p>
+
+    <p>
+        the entire source code for this website is available in a
+        <a href="https://github.com/thcrt/thcrt">GitHub repository</a>.
+    </p>
+
+    <h3>
+        your privacy
+    </h3>
+
+    <p>
+        this site doesn't use cookies or store any visitor data.
+    </p>
+
+    <h3>
+        contact
+    </h3>
+
+    <p>
+        for questions or concerns, please email <code>webmaster [at] theocourt [dot] com</code>.
+    </p>
+
+{% endblock content %}
