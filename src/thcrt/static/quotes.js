@@ -13,7 +13,12 @@ const quotes = [
     "tea. earl gray. hot.",                                                                         // Star Trek
     "there is no try.",                                                                             // Star Wars
     "that's no moon.",                                                                              // Star Wars
-    
+    "oh hi mark.",                                                                                  // The Room
+    "i'm just ken.",                                                                                // Barbie
+    "as you wish.",                                                                                 // The Princess Bride
+    "take the cannoli.",                                                                            // The Godfather
+    "not great, not terrible.",                                                                     // Chernobyl
+
     // Games
     "you must construct additional pylons.",                                                        // StarCraft II
     "removed herobrine.",                                                                           // Minecraft
@@ -37,6 +42,8 @@ const quotes = [
     "tooting the boris.",                                                                           // Who's Got The Bag                            The Streets
     "people are moving now.",                                                                       // Metronome                                    Manicured Noise
     "barbara streisand.",                                                                           // Barbara Streisand                            Duck Sauce
+    "it's this one thing that got me trippin'.",                                                    // 1 Thing                                      Amerie
+    "it's this one thing you did.",                                                                 // 1 Thing                                      Amerie
     "meet me at the afterparty.",                                                                   // AfterParty                                   GEE LEE
     "dem can't see mi face, balaclava.",                                                            // Balaclava                                    SHY FX
     "black outfit to match the balaclava.",                                                         // Balaclava                                    SHY FX
@@ -47,6 +54,8 @@ const quotes = [
     "pleased to meet you, hope you guessed my name.",                                               // Sympathy for the Devil                       The Rolling Stones
     "it's a gas, gas, gas.",                                                                        // Jumpin' Jack Flash                           The Rolling Stones
     "but where i live, the game to play is compromise solution.",                                   // Street Fighting Man                          The Rolling Stones
+    "i could not forsee this thing happening to you.",                                              // Paint It, Black                              The Rolling Stones
+    "black as night, black as coal.",                                                               // Paint It, Black                              The Rolling Stones
     "gonna break my rusty cage and run.",                                                           // Rusty Cage                                   Johnny Cash
     "i'm burning diesel, burning dinosaur bones.",                                                  // Rusty Cage                                   Johnny Cash
     "there is a house in new orleans.",                                                             // House of the Rising Sun                      The Animals
@@ -117,6 +126,7 @@ const quotes = [
     "free palestine.",
     "thanks, %%thanks%%.",
     "hi, %%friend%%!",
+    "hey, %%friend%%!",
     ":;",
 ]
 
@@ -182,6 +192,9 @@ function updateQuote() {
     let newQuote = randomChoice(quotes);
     for (const replacement in replacements) {
         newQuote = newQuote.replaceAll(`%%${replacement}%%`, randomChoice(replacements[replacement]))
+    }
+    if (quote.innerText === newQuote) {
+        newQuote = "wow, that's rare!";
     }
     quote.innerText = newQuote;
 }
