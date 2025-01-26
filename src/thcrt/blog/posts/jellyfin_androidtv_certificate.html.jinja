@@ -1,0 +1,74 @@
+---
+id: 2
+title: The TV doesn't trust me
+published: true
+date_published: 2024-01-26T18:46:00
+---
+
+<p>
+    A while ago, I installed a Jellyfin client on my parents' TV. It worked fine until early 2024,
+    when it suddenly stopped connecting to my server at all. Any attempt to log in would be hit with
+    an error. Meanwhile, both the web interface and all the other clients I tested worked just fine.
+    What was going on here?
+</p>
+
+<p>
+    Let me briefly explain my setup. Every service I self-host is exposed to the web via a reverse
+    proxy run on my VPS. For this purpose, I use Caddy; not only does it have extremely sensible
+    defaults as a reverse proxy, it also secures traffic with HTTPS automatically. Which is great! I
+    can run stuff without renewing certificates manually (Seriously, it's 2025! Stop doing that!) or
+    worrying about Cerbot.
+</p>
+
+<p>
+    To do this, Caddy provisions TLS certificates from Let's Encrypt, the free CA. In case you're
+    not sure what that means: in a nutshell, a server includes a digital certificate in its
+    responses to HTTPS traffic that proves its identity. Of course, anyone tampering with those
+    responses could just as easily replace that certificate with one of their own, so certificates
+    are signed by CAs, or Certificate Authorities. These CAs, in turn, sign certificates with their
+    own certificates. This chain of trust has to terminate somewhere, so manufacturers will include
+    lists of certificates in browsers or devices which will be trusted by default. Yes, this is
+    oversimplified, but you get the point.
+</p>
+
+<p>
+    This, however, is where the issue arose. Let's Encrypt is a relatively young organisation, only
+    having produced their first certificate in 2015. Coincidentally, 2015 is also the year in which
+    my parents' TV was manufactured, so it didn't ship trusting Let's Encrypt-signed certificates.
+    Initially, that wasn't a problem. Let's Encrypt had their certificates cross-signed by an older
+    CA, one that was already trusted by a most devices, so people with older devices would still be
+    able to connect to servers using Let's Encrypt-signed certificates securely.
+</p>
+
+<p>
+    Unfortunately, for a number of reasons, everything in the world of certificates has an
+    expiration date, and that of the cross-sign was the 30th of September, 2024. From that point on,
+    any device that didn't trust Let's Encrypt wouldn't trust any servers using certificates issued
+    by them. Let's Encrypt also made a few other changes to their certificate hierarchy, which I
+    don't feel like getting into here, but which would have further complicated matters. And the TV,
+    being from 2015, had long since stopped receiving any updates. Of course, as soon as Let's
+    Encrypt retired the cross-sign ahead of its expiration, it was only a matter of time until Caddy
+    renewed the certificate for my Jellyfin instance and received one that would no longer be
+    trusted by the TV. 
+</p>
+
+<p>
+    This issue was a real pain to diagnose. Other clients, not suffering from the frankly shameful
+    lack of support that seems to universally be the case among smart TVs, could connect just fine
+    both via the web UI and their respective clients. The logs from the Jellyfin server instance
+    didn't reveal anything helpful either. Eventually, though, I fired up 
+    <a href="https://developer.android.com/studio/debug/logcat">Logcat</a> and found out the nature
+    of the issue. I wasn't alone, either—someone else had filed a
+    <a href="https://github.com/jellyfin/jellyfin-androidtv/issues/3457">bug report</a> regarding
+    the same issue. To be honest, I'm surprised this wasn't reported more frequently, given that 
+    Let's Encrypt is by far the most common CA for anyone who isn't a large corporation, and there
+    are bound to be plenty more TVs still running outdated versions of Android.
+</p>
+
+<p>
+    So, how did I fix it? Well, for now, I've created a ZeroSSL account (they offer a limited number
+    of free certificates to each user) and changed my Caddy configuration to use it solely for the
+    domain under which Jellyfin is accessible. At some point, their certificate will expire too, and
+    be renewed, and I'll have to figure out how to add to the TV's trust store manually.
+    But for now, it works, and I'm just glad I was able to track this problem down. █
+</p>
