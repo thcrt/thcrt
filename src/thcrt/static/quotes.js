@@ -147,7 +147,7 @@ const replacements = {
         "elle",
         "sophia",
         "bhakti",
-        "jag",
+        "durian",
         "hex",
         "w",
         "tillian",
@@ -166,7 +166,8 @@ const replacements = {
         "starwall",
         "sid",
         "lesa",
-        "finn"
+        "finn",
+        "katie"
     ],
     "thanks": [
         "mum",
