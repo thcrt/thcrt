@@ -133,7 +133,7 @@ const quotes = [
 
 const replacements = {
     "friend": [
-        "mum",
+        "mu",
         "soft",
         "pat",
         "mia",
@@ -153,7 +153,7 @@ const replacements = {
         "w",
         "tillian",
         "lime",
-        "jackdaw",
+        "jd",
         "nicole",
         "samir",
         "fops",
@@ -166,7 +166,8 @@ const replacements = {
         "sid",
         "lesa",
         "finn",
-        "katie"
+        "katie",
+        "taq",
     ],
     "thanks": [
         "mum",
