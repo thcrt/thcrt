@@ -14,7 +14,6 @@ const quotes = [
     "there is no try.",                                                                             // Star Wars
     "that's no moon.",                                                                              // Star Wars
     "oh hi mark.",                                                                                  // The Room
-    "i'm just ken.",                                                                                // Barbie
     "as you wish.",                                                                                 // The Princess Bride
     "take the cannoli.",                                                                            // The Godfather
     "not great, not terrible.",                                                                     // Chernobyl
@@ -23,11 +22,9 @@ const quotes = [
     "you must construct additional pylons.",                                                        // StarCraft II
     "removed herobrine.",                                                                           // Minecraft
     "everything not saved will be lost.",                                                           // Various Nintendo games
-    "invisible. and very, very quiet.",                                                             // Skyrim
-    "werebears? where? bears?",                                                                     // Skyrim
     "i am fond of pigs.",                                                                           // Civilization 6
     "up up down down left right b a start",                                                         // Konami
-    "the game was rigged from the start",                                                           // Fallout: New Vegas
+    "the game was rigged from the start.",                                                           // Fallout: New Vegas
     
     // Books
     "don't panic.",                                                                                 // The Hitchhiker's Guide to the Galaxy         Douglas Adams
@@ -105,7 +102,7 @@ const quotes = [
     // Quotations
     "and plummeted sixteen feet through an announcer's table.",                                     // u/shittymorph
     "be water, my friend.",                                                                         // Bruce Lee
-    "we ought to make the pie higher.",                                                             // George W Bush
+    "now watch this drive.",                                                                        // George W Bush
     "there are 15 competing standards.",                                                            // XKCD 927
     "correct horse battery staple.",                                                                // XKCD 936
     "i was crazy once.",                                                                            // Internet copypasta
@@ -116,22 +113,21 @@ const quotes = [
     // Misc
     "give me ASCII or give me deaþ!",
     "as seen on tv!",
-    "error: could not load quote.",
     "not my circus, not my monkeys.",
     "eat pasta. run fasta.",
     "i use arch btw.",
-    "this website works best in NetPositive.",
-    "install GuixSD!",
+    "this website works best in %%browser%%.",
     "<script>alert('pwned')</script>",
     "pwned');DROP TABLE quotes;--",
     "real programmers use %%editor%%!",
     
     // Acknowledgements
     "siamo tutti antifascisti.",
-    "free palestine.",
     "thanks, %%thanks%%.",
     "hi, %%friend%%!",
     "hey, %%friend%%!",
+    "%%friend%% is pretty cool!",
+    "sponsored by %%friend%%.",
     ":;",
 ]
 
@@ -166,8 +162,6 @@ const replacements = {
         "phii",
         "lena",
         "mayo",
-        "emma",
-        "anne",
         "starwall",
         "sid",
         "lesa",
@@ -186,6 +180,14 @@ const replacements = {
         "micro",
         "Codium",
         "ed"
+    ],
+    "browser": [
+        "firefox",
+        "internet explorer 9",
+        "netpositive",
+        "netscape navigator",
+        "safari 5.1.7 for windows",
+        "the nintendo ds browser"
     ]
 }
 
