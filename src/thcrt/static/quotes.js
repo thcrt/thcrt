@@ -27,6 +27,7 @@ const quotes = [
     "werebears? where? bears?",                                                                     // Skyrim
     "i am fond of pigs.",                                                                           // Civilization 6
     "up up down down left right b a start",                                                         // Konami
+    "the game was rigged from the start",                                                           // Fallout: New Vegas
     
     // Books
     "don't panic.",                                                                                 // The Hitchhiker's Guide to the Galaxy         Douglas Adams
@@ -40,6 +41,8 @@ const quotes = [
     "don't be shocked by the tone of my voice.",                                                    // Weapon of Choice                             Fatboy Slim
     "walk without rhythm. it won't attract the worm.",                                              // Weapon of Choice                             Fatboy Slim
     "tooting the boris.",                                                                           // Who's Got The Bag                            The Streets
+    "new dorp, new york.",                                                                          // NEW DORP. NEW YORK                           SBTRKT
+    "gargoyles garglin' oil.",                                                                      // NEW DORP. NEW YORK                           SBTRKT
     "people are moving now.",                                                                       // Metronome                                    Manicured Noise
     "barbara streisand.",                                                                           // Barbara Streisand                            Duck Sauce
     "it's this one thing that got me trippin'.",                                                    // 1 Thing                                      Amerie
@@ -69,6 +72,8 @@ const quotes = [
     "the revolution will not be televised.",                                                        // The Revolution Will Not Be Televised         Gil Scott-Heron
     "it's the london to brighton line.",                                                            // The Brighton Line                            The Craze
     "bamboleo.",                                                                                    // Bamboleo                                     Gipsy Kings
+    "habla con la luna, habla con la playa.",                                                       // El Pescador                                  Totó La Momposina
+    "ámame por siempre, sé mi gran amor.",                                                          // Blue Berries                                 Sem Jacobs
     "una poca de gracia.",                                                                          // La Bamba
     "canta y no llores.",                                                                           // Cielito Lindo
     "cuatro paquetes de sal.",                                                                      // 4 Paquetes De Sal
@@ -194,7 +199,7 @@ function updateQuote() {
     for (const replacement in replacements) {
         newQuote = newQuote.replaceAll(`%%${replacement}%%`, randomChoice(replacements[replacement]))
     }
-    if (quote.innerText === newQuote) {
+    if ((quote.innerText === newQuote) && (quote.innerText.includes("%%"))) {
         newQuote = "wow, that's rare!";
     }
     quote.innerText = newQuote;
