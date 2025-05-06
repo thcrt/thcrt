@@ -21,7 +21,7 @@ def index():
     return f.render_template("blog/index.html.jinja", posts=posts.values())
 
 
-@bp.route("/<int:id>")
+@bp.route("/<int:post_id>")
 def show_post(post_id: int):
     post = posts[post_id]
     return f.render_template(
