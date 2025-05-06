@@ -135,7 +135,7 @@ const replacements = {
     "friend": [
         "mum",
         "soft",
-        "patya",
+        "pat",
         "mia",
         "gavi",
         "merlin",
