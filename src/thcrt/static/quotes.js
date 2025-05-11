@@ -109,6 +109,7 @@ const quotes = [
     "[citation needed]",                                                                            // Wikipedia
     "on the internet, nobody knows you're a dog.",                                                  // The New Yorker
     "habicht hat 2 h!",                                                                             // Max Schradin
+    "i'm soft i'm soft i'm soft!",                                                                  // soft
 
     // Misc
     "give me ASCII or give me deaþ!",
