@@ -169,6 +169,8 @@ const replacements = {
         "finn",
         "katie",
         "taq",
+        "enbyss",
+        "c",
     ],
     "thanks": [
         "mum",
