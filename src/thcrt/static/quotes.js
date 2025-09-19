@@ -42,6 +42,7 @@ const quotes = [
     "gargoyles garglin' oil.",                                                                      // NEW DORP. NEW YORK                           SBTRKT
     "people are moving now.",                                                                       // Metronome                                    Manicured Noise
     "barbara streisand.",                                                                           // Barbara Streisand                            Duck Sauce
+    "it's time for the percolator.",                                                                // Cajmere                                      Percolator
     "it's this one thing that got me trippin'.",                                                    // 1 Thing                                      Amerie
     "it's this one thing you did.",                                                                 // 1 Thing                                      Amerie
     "meet me at the afterparty.",                                                                   // AfterParty                                   GEE LEE
@@ -62,6 +63,7 @@ const quotes = [
     "letting the days go by.",                                                                      // Once in a Lifetime                           Talking Heads
     "and you may ask yourself: how did i get here?",                                                // Once in a Lifetime                           Talking Heads
     "behind the wheel of a large automobile.",                                                      // Once in a Lifetime                           Talking Heads
+    "this ain't no disco.",                                                                         // Life During Wartime                          Talking Heads
     "another day older, and deeper in debt.",                                                       // Sixteen Tons                                 Tennessee Ernie Ford
     "gold on the ceiling.",                                                                         // Gold on the Ceiling                          The Black Keys
     "and don'tcha come back no more.",                                                              // Hit the Road Jack                            Ray Charles
