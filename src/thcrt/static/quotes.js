@@ -24,7 +24,7 @@ const quotes = [
     "everything not saved will be lost.",                                                           // Various Nintendo games
     "i am fond of pigs.",                                                                           // Civilization 6
     "up up down down left right b a start",                                                         // Konami
-    "the game was rigged from the start.",                                                           // Fallout: New Vegas
+    "the game was rigged from the start.",                                                          // Fallout: New Vegas
     
     // Books
     "don't panic.",                                                                                 // The Hitchhiker's Guide to the Galaxy         Douglas Adams
@@ -173,6 +173,7 @@ const replacements = {
         "taq",
         "enbyss",
         "c",
+        "nicoleta",
     ],
     "thanks": [
         "mum",
