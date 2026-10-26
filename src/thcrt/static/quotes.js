@@ -37,6 +37,9 @@ const quotes = [
     "ahora todo va.",                                                                               // Ahora Todo Va                                Dennis Cruz
     "don't be shocked by the tone of my voice.",                                                    // Weapon of Choice                             Fatboy Slim
     "walk without rhythm. it won't attract the worm.",                                              // Weapon of Choice                             Fatboy Slim
+    "and the colour red",                                                                           // and the colour red                           Underworld
+    "you bring light in.",                                                                          // Two Months Off                               Underworld
+    "shouting, 'lager, lager, lager, lager'.",                                                      // Born Slippy (Nuxx)                           Underworld
     "tooting the boris.",                                                                           // Who's Got The Bag                            The Streets
     "new dorp, new york.",                                                                          // NEW DORP. NEW YORK                           SBTRKT
     "gargoyles garglin' oil.",                                                                      // NEW DORP. NEW YORK                           SBTRKT
@@ -112,6 +115,8 @@ const quotes = [
     "on the internet, nobody knows you're a dog.",                                                  // The New Yorker
     "habicht hat 2 h!",                                                                             // Max Schradin
     "i'm soft i'm soft i'm soft!",                                                                  // soft
+    "you gotta be cool first, babe",                                                                // random stream clip
+    "GOLD GOLD GOLD",                                                                               // ohnePixel
 
     // Misc
     "give me ASCII or give me deaþ!",
@@ -123,62 +128,62 @@ const quotes = [
     "<script>alert('pwned')</script>",
     "pwned');DROP TABLE quotes;--",
     "real programmers use %%editor%%!",
+    "siamo tutti antifascisti.",
     
     // Acknowledgements
-    "siamo tutti antifascisti.",
     "thanks, %%thanks%%.",
     "hi, %%friend%%!",
     "hey, %%friend%%!",
     "%%friend%% is pretty cool!",
     "sponsored by %%friend%%.",
-    ":;",
 ]
 
 const replacements = {
     "friend": [
-        "mu",
+        "finn",
+        "sophia",
         "soft",
+        "jason",
+        "aglaia",
         "pat",
-        "mia",
         "gavi",
+        "tori",
+        "sydney",
+        "enbyss",
+        "sam",
+        "mu",
+        "mia",
         "merlin",
         "healyn",
         "max",
+        "katie",
         "linus",
         "schratze",
         "jae",
+        "charlotte",
         "rachel",
         "elle",
-        "sophia",
         "bhakti",
-        "durian",
         "hex",
-        "w",
         "tillian",
         "lime",
         "jd",
         "nicole",
         "samir",
-        "fops",
         "ersei",
-        "sam",
-        "phii",
-        "lena",
         "mayo",
         "starwall",
         "sid",
         "lesa",
-        "finn",
-        "katie",
-        "taq",
-        "enbyss",
-        "c",
-        "nicoleta",
+        
     ],
     "thanks": [
         "mum",
+        "dad",
         "4censord",
-        "flisk"
+        "flisk",
+        "justin",
+        "des"
     ],
     "editor": [
         "vim",
@@ -186,7 +191,7 @@ const replacements = {
         "nano",
         "micro",
         "Codium",
-        "ed"
+        "ed, the standard text editor"
     ],
     "browser": [
         "firefox",
